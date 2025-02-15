@@ -35,6 +35,9 @@
 
 .App-link {
   color: #000000;
+  position: fixed;
+  bottom: 50px; /* Adjust as needed */
+  left: 50px;   /* Adjust as needed */
 }
 
 /*@keyframes App-logo-spin {
