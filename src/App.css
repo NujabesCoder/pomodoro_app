@@ -26,6 +26,13 @@
   border-radius: 10px;
 }
 
+.timer-display {
+  font-size: 15rem;  /* Adjust the size as needed */
+  margin: 20px;
+  text-align: center;
+}
+
+
 .start-btn {
   background-color: rgb(255, 178, 44);
   color: black;
