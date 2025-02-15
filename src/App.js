@@ -63,9 +63,9 @@ function App() {
     setFinishedMessage("");
   };
 
-  const handleStop = () => {
+  /*const handleStop = () => {
     setIsRunning(prev => !prev);
-  };
+  };*/
 
   const handleBreak = () => {
     if (audioRef.current) {
@@ -113,12 +113,12 @@ function App() {
               start
           </button>
 
-          <button 
+          {/*<button 
             className="timers stop-btn"  
             title="it's okay to take a lil break, come back stronger"
             onClick={handleStop}>
               stop
-          </button>
+          </button>*/}
 
           <button 
             className="timers break-btn" 
