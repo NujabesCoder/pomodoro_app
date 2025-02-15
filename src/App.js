@@ -5,12 +5,20 @@ import {WORK_TIME, BREAK_TIME} from './constants';
 import './App.css';
 
 
-
 function App() {
+  const [time, setTime] = useState(0);
+
+
+
   return (
     <div className="App">
+      <h1 className="title">
+        Pomodoro timer
+      </h1>
+      <img src={logo} className="App-logo" alt="logo" />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+
         <p>
           Click on the timer if you want to start it. It's a 25 min session with a 5 min break
         </p>
@@ -22,6 +30,8 @@ function App() {
         >
           <span>don't click here</span>
         </a>
+
+        
       </header>
     </div>
   );
