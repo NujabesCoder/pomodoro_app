@@ -8,7 +8,38 @@
   margin-top: 20px;
 }
 
+.buttons-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;  /* centers the row horizontally */
+  align-items: center;      /* vertically aligns them in the container */
+  margin-bottom: 20px;      /* space below the buttons */
+}
 
+/* Make all buttons the same size */
+.timers {
+  font-size: 7rem;    /* Adjust text size */
+  width: 350px;       /* Same width for all buttons */
+  height: 160px;       /* Same height for all buttons */
+  margin: 20px;       /* Spacing between buttons */
+  cursor: pointer;    /* Show pointer on hover */
+  border-radius: 10px;
+}
+
+.start-btn {
+  background-color: rgb(255, 178, 44);
+  color: black;
+}
+
+.stop-btn {
+  background-color: rgb(133, 72, 54);
+  color: black;
+}
+
+.break-btn {
+  background-color: rgb(255, 252, 239);
+  color: black;
+}
 
 .App-logo {
   height: 20vmin;
