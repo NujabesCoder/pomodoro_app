@@ -17,18 +17,12 @@ function App() {
       timer = setInterval(() => {
         setTimeLeft(prevTime => prevTime - 1);
       }, 1000);
-    } else if (timeLeft === 0 && isRunning) {
-      if (!onBreak) {
-        setTimeLeft(BREAK_TIME);
-        setOnBreak(true);
-      } else {
-        setTimeLeft(WORK_TIME);
-        setOnBreak(false);
-      }
+    } else if (timeLeft === 0) {
+      setIsRunning(false);
     }
 
     return () => clearInterval(timer);
-  }, [isRunning, timeLeft, onBreak]);
+  }, [isRunning, timeLeft]);
 
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
@@ -38,18 +32,19 @@ function App() {
 
   // Event handlers for the buttons
   const handleStart = () => {
+    setOnBreak(false);
+    setTimeLeft(WORK_TIME);
     setIsRunning(true);
   };
 
   const handleStop = () => {
-    setIsRunning(false);
+    setIsRunning(prev => !prev);
   };
 
   const handleBreak = () => {
-    // Force break mode: set timer to break time and start it.
-    setIsRunning(true);
     setOnBreak(true);
     setTimeLeft(BREAK_TIME);
+    setIsRunning(true);
   };
 
   return (
