@@ -57,15 +57,16 @@ function App() {
       audioRef.current = null;
     }
     setAlarmPlayed(false);
+    //setIsRunning(prev => !prev);
     setOnBreak(false);
     setTimeLeft(WORK_TIME);
     setIsRunning(true);
     setFinishedMessage("");
   };
 
-  /*const handleStop = () => {
+  const handleStop = () => {
     setIsRunning(prev => !prev);
-  };*/
+  };
 
   const handleBreak = () => {
     if (audioRef.current) {
@@ -73,6 +74,7 @@ function App() {
       audioRef.current = null;
     }
     setAlarmPlayed(false);
+    //setIsRunning(prev => !prev);
     setOnBreak(true);
     setTimeLeft(BREAK_TIME);
     setIsRunning(true);
@@ -113,13 +115,6 @@ function App() {
               start
           </button>
 
-          {/*<button 
-            className="timers stop-btn"  
-            title="it's okay to take a lil break, come back stronger"
-            onClick={handleStop}>
-              stop
-          </button>*/}
-
           <button 
             className="timers break-btn" 
             title="congratulation, you deserve it :)" 
@@ -127,10 +122,16 @@ function App() {
               break
           </button>
 
+          <button 
+            className="timers stop-btn"  
+            title="it's okay to take a lil break, come back stronger"
+            onClick={handleStop}>
+              pause
+          </button>
+
         </div>
         <p className="text">
-          Click on "Start" if you want to start the timer. It's a 25 min session with a 5 min break. Once your 
-          start it, you cannot pause it. 
+          Click on <b>"Start"</b> if you want to start the timer. It's a <b>25 min</b> session with a <b>5 min</b> break. If you want to stop the timer press <b>pause</b>, to continue where your left, re-click on the button (but don't abuse it). 
         </p>
 
         <a
