@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pomodoro_app/static/css/main.a3771aa0.css",
-    "main.js": "/pomodoro_app/static/js/main.30d82ead.js",
+    "main.js": "/pomodoro_app/static/js/main.ed666321.js",
     "static/js/453.3d324fae.chunk.js": "/pomodoro_app/static/js/453.3d324fae.chunk.js",
     "static/media/break_finished.wav": "/pomodoro_app/static/media/break_finished.74e8aca4f02f27a3c6c3.wav",
     "static/media/session_finished.wav": "/pomodoro_app/static/media/session_finished.fc36e6662e723ce830a5.wav",
@@ -9,11 +9,11 @@
     "static/media/lock_in_Lemon.png": "/pomodoro_app/static/media/lock_in_Lemon.71a6a061592d0c9dd22c.png",
     "index.html": "/pomodoro_app/index.html",
     "main.a3771aa0.css.map": "/pomodoro_app/static/css/main.a3771aa0.css.map",
-    "main.30d82ead.js.map": "/pomodoro_app/static/js/main.30d82ead.js.map",
+    "main.ed666321.js.map": "/pomodoro_app/static/js/main.ed666321.js.map",
     "453.3d324fae.chunk.js.map": "/pomodoro_app/static/js/453.3d324fae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3771aa0.css",
-    "static/js/main.30d82ead.js"
+    "static/js/main.ed666321.js"
   ]
 }
