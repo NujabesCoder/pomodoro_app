@@ -3,13 +3,15 @@
 }
 
 .title {
-  font-size: 8rem;
+  /*font-size: 8rem;*/
+  font-size: clamp(3rem, 1vw, 8rem);
   text-align: center;
   margin-top: 20px;
 }
 
 .small-title  {
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+  font-size: clamp(1.5rem, 1vw, 3rem);
   text-align: center;
   margin-top: 20px;
 }
@@ -28,18 +30,22 @@
 
 /* Make all buttons the same size */
 .timers {
-  font-size: 7rem;    /* Adjust text size */
-  width: 350px;       /* Same width for all buttons */
-  height: 160px;       /* Same height for all buttons */
+  font-size: 2rem;    /* Adjust text size */
+  width: 100px;       /* Same width for all buttons */
+  height: 50px;       /* Same height for all buttons */
   margin: 20px;       /* Spacing between buttons */
   cursor: pointer;    /* Show pointer on hover */
   border-radius: 10px;
 }
 
 .timer-display {
-  font-size: 15rem;  /* Adjust the size as needed */
+  font-size: 5rem;  /* Adjust the size as needed */
   margin: 20px;
   text-align: center;
+}
+
+.text {
+  font-size: 1.2rem;
 }
 
 
@@ -68,7 +74,7 @@
 
 .App-header {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +84,7 @@
 }
 
 .App-link {
+  font-size: 0.6rem;
   color: #000000;
   position: fixed;
   bottom: 50px; /* Adjust as needed */

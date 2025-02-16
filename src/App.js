@@ -128,8 +128,9 @@ function App() {
           </button>
 
         </div>
-        <p>
-          Click on "Start" if you want to start the timer. It's a 25 min session with a 5 min break
+        <p className="text">
+          Click on "Start" if you want to start the timer. It's a 25 min session with a 5 min break. Once your 
+          start it, you cannot pause it. 
         </p>
 
         <a
